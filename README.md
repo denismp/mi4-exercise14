@@ -108,6 +108,20 @@ Start VSC.
 
 In the terminal window, run dotnet new "Console Application" to initialize your project in your project directory.
 
+You will end up with a file called Program.cs that looks like:
+using System;
+
+namespace mi4_exercise14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
 Use this to install NuGet Package Manager for the MAC
 
 Got to the Extensions Icon on the left and look for NuGet
