@@ -100,3 +100,37 @@ Create a zip file (e.g. username-playing-smart-contracts-nethereum-web3.zip) con
 •	A screenshot of the Ropsten Etherscan contract address and its transactions.
 
 Submit your zip file as homework at the course platform.
+
+NOTES:
+Make sure you have dotnet installed for MAC from https://dotnet.microsoft.com/download
+
+Start VSC.
+
+In the terminal window, run dotnet new "Console Application" to initialize your project in your project directory.
+
+Use this to install NuGet Package Manager for the MAC
+
+Got to the Extensions Icon on the left and look for NuGet
+
+NuGet Package Manager
+jmrog.vscode-nuget-package-manager
+jmrog
+336,557
+Repository
+License
+Add or remove .NET Core 1.1+ package references to/from your project's .csproj or .fsproj file using Code's Command Palette.
+Disable
+Uninstall
+This extension is enabled globally.
+
+To install the Nethereum.Contracts and Nethereum.Web3
+1. Click on View -> Command Palette
+2. In the search bar, search for Nethereum.
+3. You should see Nethereum Add.
+4. Select that.
+5. Enter Nethereum in the search bar again.
+6. Select Nethereum.Contracts and select the latest.
+7. Repeat steps 3 through 5.
+8. Select Nethereum.Web3
+
+
