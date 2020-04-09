@@ -8,5 +8,6 @@
     <PackageReference Include="Nethereum.Contracts" Version="3.7.1"/>
     <PackageReference Include="Nethereum.Web3" Version="3.7.1"/>
     <PackageReference Include="Nethereum.Accounts" Version="3.7.1"/>
+    <PackageReference Include="Nethereum.ABI" Version="3.7.1"/>
   </ItemGroup>
 </Project>
