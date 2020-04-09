@@ -20,6 +20,12 @@ namespace mi4_exercise14
 
             var fact = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
             System.Console.WriteLine($"Transaction Hash: {contractService.AddFact(fact)}");
+
+            var index = 0;
+            System.Console.WriteLine($"Fact {index}: {contractService.getFact(index)}");
+
+            System.Console.WriteLine($"Stored facts in the contract: {contractService.GetTotalFacts()}");
+
             System.Console.WriteLine("Press Any Key to Exit...");
             System.Console.ReadLine();
         }
@@ -46,6 +52,22 @@ namespace mi4_exercise14
                     .GetAwaiter()
                     .GetResult();
                 return txHash;
+            }
+
+            public string getFact(int index) {
+                var getFactfunction = contract.GetFunction("getFact");
+                var task = getFactfunction.CallAsync<string>(index);
+                var fact = task.Result;
+
+                return fact;
+            }
+
+            public int GetTotalFacts()
+            {
+                var getTotalFacts = contract.GetFunction("count");
+                var task = getTotalFacts.CallAsync<int>();
+
+                return task.Result;
             }
         }
     }

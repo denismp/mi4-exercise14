@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Nethereum.Accounts": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
             "Nethereum.Contracts": {
               "target": "Package",
               "version": "[3.7.1, )"

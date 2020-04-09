@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "mi4-exercise14/1.0.0": {
         "dependencies": {
+          "Nethereum.Accounts": "3.7.1",
           "Nethereum.Contracts": "3.7.1",
           "Nethereum.Web3": "3.7.1"
         },
